@@ -1,12 +1,13 @@
 variable "name" {
   type        = string
   description = "Subnet name to create in GCP"
+  default = "demo-subnet"
 }
 
 variable "description" {
   type        = string
   description = "Description of subnet to create in GCP"
-  default     = "a subnet"
+  default     = "demo subnet"
 }
 
 variable "vpc" {
@@ -23,5 +24,6 @@ variable "subnetwork-region" {
 variable "ip_cidr_range" {
   type        = string
   description = "IP range to book"
+  default = "172.16.0.0/16"
 }
 
